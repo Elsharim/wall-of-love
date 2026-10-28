@@ -8,6 +8,13 @@
 <meta property="og:title" content="Mo's Wall of Love ❤️">
 <meta property="og:description" content="Real Poppy customers on their call with Mo. This is why you should show up to your onboarding.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://elsharim.github.io/wall-of-love/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mo's Wall of Love ❤️">
+<meta name="twitter:description" content="Real Poppy customers on their call with Mo.">
+<meta name="twitter:image" content="https://elsharim.github.io/wall-of-love/og.jpg">
 <link rel="icon" href="https://getpoppy.ai/logos/poppy-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,8 +65,13 @@
 
   /* hero */
   .hero { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; padding: 44px 0 30px; }
-  .me { position: relative; width: 132px; height: 132px; }
-  .me img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 20%; border: 4px solid #fff; box-shadow: var(--shadow); }
+  .me { position: relative; width: 176px; height: 176px; }
+  .me::before { content: ""; position: absolute; inset: -7px; border-radius: 50%; background: conic-gradient(from 200deg, var(--coral), var(--star), #ff8fa3, var(--coral)); animation: spin 9s linear infinite; }
+  .me img { position: relative; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 30%; border: 5px solid #fff; box-shadow: var(--shadow); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .me span { z-index: 1; }
+  .name { margin: 14px 0 0; font-size: 14px; color: var(--muted); }
+  .name b { color: var(--ink); font-weight: 600; }
   .me span { position: absolute; right: -4px; bottom: 4px; background: #fff; border-radius: 999px; padding: 3px 9px; font-size: 18px; box-shadow: var(--shadow); }
   .eyebrow { margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--coral); }
   h1 { margin: 0; font: 600 clamp(28px, 4.4vw, 46px)/1.12 Lora, Georgia, serif; letter-spacing: -.01em; text-wrap: balance; }
@@ -101,6 +113,24 @@
   .who b { display: block; font-size: 14px; font-weight: 600; line-height: 1.3; }
   .who small { display: block; font-size: 12px; color: var(--muted); }
 
+  /* spotlight */
+  .spot { position: relative; margin: 6px 0 26px; background: var(--ink); color: #fff; border-radius: 24px; padding: 34px 40px 28px; overflow: hidden; box-shadow: 0 20px 50px -24px rgba(43, 30, 38, .6); }
+  .spot::before { content: "“"; position: absolute; top: -34px; left: 18px; font: 700 180px/1 Lora, Georgia, serif; color: var(--coral); opacity: .35; }
+  .spot q { display: block; position: relative; quotes: none; font: 500 clamp(20px, 2.6vw, 28px)/1.4 Lora, Georgia, serif; min-height: 2.8em; transition: opacity .35s; text-wrap: pretty; }
+  .spot q mark { background: rgba(240, 96, 60, .35); color: #fff; }
+  .spot .by { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; font-size: 13px; color: #d9c9cf; transition: opacity .35s; }
+  .spot .by b { color: #fff; font-weight: 600; }
+  .dots { display: flex; gap: 6px; }
+  .dots button { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 99px; background: rgba(255, 255, 255, .28); cursor: pointer; transition: width .3s, background .3s; }
+  .dots button[aria-current="true"] { width: 22px; background: var(--coral); }
+  .fade { opacity: 0; }
+
+  .pull { margin: 0 0 12px; padding: 2px 0 2px 14px; border-left: 3px solid var(--coral); font: 500 18px/1.5 Lora, Georgia, serif; }
+  .card { opacity: 0; transform: translateY(12px); animation: up .5s ease forwards; transition: transform .2s, box-shadow .2s; }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 1px 2px rgba(80, 40, 30, .05), 0 16px 32px -14px rgba(80, 40, 30, .28); }
+  @keyframes up { to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .card, .me::before { animation: none; opacity: 1; transform: none; } }
+
   .foot { text-align: center; padding: 10px 0 56px; }
   .foot p { margin: 0 0 6px; font: 500 22px/1.3 Lora, Georgia, serif; }
   .foot small { color: var(--muted); font-size: 12px; }
@@ -113,7 +143,8 @@
     .brand b { font-size: 20px; }
     .score b { font-size: 28px; }
     .hero { grid-template-columns: 1fr; gap: 16px; padding: 28px 0 18px; }
-    .me { width: 96px; height: 96px; }
+    .me { width: 120px; height: 120px; }
+    .spot { padding: 26px 22px 20px; border-radius: 18px; }
     .card { padding: 18px 18px 16px; }
     .grid { gap: 14px; }
     .col { gap: 14px; }
@@ -145,8 +176,16 @@
       <h1>What people say after their call with Mo</h1>
       <p class="sub">Every review here mentions Mo by name. They're real Poppy customers.</p>
       <p class="why">This is why you should show up to your onboarding.</p>
+      <p class="name"><b>Mo Elsharif</b> · Poppy AI</p>
       <div class="tiles" id="tiles"></div>
     </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section class="spot" id="spot" hidden aria-live="polite">
+    <q id="spotq"></q>
+    <div class="by" id="spotby"><span></span><div class="dots" id="dots"></div></div>
   </section>
 </div>
 
@@ -213,6 +252,17 @@
     ).join("");
   }
 
+  const HAS = new RegExp(NAME.source);
+  function pullOf(text) {
+    const sents = text.replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s+(?=[A-Z0-9"“])/);
+    const i = sents.findIndex((x) => HAS.test(x));
+    if (i < 0) return null;
+    let q = sents[i];
+    if (q.length < 70 && sents[i + 1] && (q + sents[i + 1]).length < 240) q += " " + sents[i + 1];
+    return q.length > 260 ? q.slice(0, q.lastIndexOf(" ", 250)) + "…" : q;
+  }
+  const hi = (t) => esc(t).replace(NAME, (m) => `<mark>${m}</mark>`);
+
   function initials(name) {
     const parts = name.replace(/[^\p{L}\s]/gu, " ").trim().split(/\s+/).filter(Boolean);
     return ((parts[0] || "?")[0] + (parts.length > 1 ? parts[parts.length - 1][0] : "")).toUpperCase();
@@ -225,13 +275,17 @@
     const badge = r.url
       ? `<a class="src ${src.cls}" href="${esc(r.url)}" target="_blank" rel="noopener">${src.icon} ${src.label} ↗</a>`
       : `<span class="src ${src.cls}">${src.icon} ${src.label}</span>`;
+    // the pull already opens the card: when the review starts with it, the body shows only what follows
+    const flat = r.text.replace(/\s+/g, " ").trim();
+    const rest = r.pull && !r.pull.endsWith("…") && flat.startsWith(r.pull) ? flat.slice(r.pull.length).trim() : null;
     const el = document.createElement("article");
     el.className = "card";
     el.innerHTML = `
       <div class="row1"><span class="stars" aria-label="${r.rating} out of 5 stars">${"★".repeat(r.rating || 5)}</span>${badge}</div>
+      ${r.pull ? `<p class="pull">“${hi(r.pull)}”</p>` : ""}
       ${title ? `<h3>${esc(title).replace(NAME, (m) => `<mark>${m}</mark>`)}</h3>` : ""}
-      <div class="body clamp">${body(r.text)}</div>
-      <button class="more" hidden>Read more</button>
+      ${rest === null ? `<div class="body clamp"${r.pull ? ' style="max-height:6.4em"' : ""}>${body(r.text)}</div>` : rest ? `<div class="body clamp" style="max-height:6.4em">${body(rest)}</div>` : ""}
+      <button class="more" hidden>Read full review</button>
       <div class="who">
         ${r.avatar ? `<img class="av" src="${esc(r.avatar)}" alt="" loading="lazy">` : `<span class="av">${esc(initials(name))}</span>`}
         <div><b>${esc(name)}</b><small>${esc(meta(r))}</small></div>
@@ -257,16 +311,20 @@
     const cols = Array.from({ length: columnCount() }, () => {
       const c = document.createElement("div"); c.className = "col"; grid.appendChild(c); return c;
     });
+    let k = 0;
     for (const r of list) {
       const shortest = cols.reduce((a, b) => (b.offsetHeight < a.offsetHeight ? b : a));
       const el = card(r);
+      el.style.animationDelay = Math.min(k++ * 60, 600) + "ms";
       shortest.appendChild(el);
       const b = el.querySelector(".body"), more = el.querySelector(".more");
+      if (!b) continue;
       if (b.scrollHeight > b.clientHeight + 6) {
         more.hidden = false;
         more.addEventListener("click", () => {
           const open = b.classList.toggle("clamp");
-          more.textContent = open ? "Read more" : "Show less";
+          b.style.maxHeight = open && el.querySelector(".pull") ? "6.4em" : "none";
+          more.textContent = open ? "Read full review" : "Show less";
         });
       } else {
         b.classList.remove("clamp");
@@ -274,8 +332,32 @@
     }
   }
 
+  function spotlight(list) {
+    if (!list.length) return;
+    list = [...list].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8);
+    const box = document.getElementById("spot"), q = document.getElementById("spotq"), by = document.querySelector("#spotby span"), dots = document.getElementById("dots");
+    let i = 0, timer;
+    dots.innerHTML = list.map((_, n) => `<button aria-label="Quote ${n + 1}"></button>`).join("");
+    const show = (n) => {
+      i = (n + list.length) % list.length;
+      const r = list[i];
+      q.classList.add("fade"); by.classList.add("fade");
+      setTimeout(() => {
+        q.innerHTML = hi(r.pull);
+        by.innerHTML = `<b>${esc(displayName(r))}</b> · ${esc((SOURCES[r.source] || SOURCES.wall).label)} · ${esc(fmtDate(r.date))}`;
+        q.classList.remove("fade"); by.classList.remove("fade");
+      }, 250);
+      dots.querySelectorAll("button").forEach((d, n2) => d.setAttribute("aria-current", n2 === i));
+      clearTimeout(timer); timer = setTimeout(() => show(i + 1), 6500);
+    };
+    dots.addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) show([...dots.children].indexOf(b)); });
+    box.hidden = false; show(0);
+  }
+
   function setup(data) {
     state.reviews = data.reviews.filter((r) => r.text);
+    state.reviews.forEach((r) => { r.pull = pullOf(r.text); });
+    spotlight(state.reviews.filter((r) => r.pull && r.pull.length >= 40 && r.pull.length <= 230 && (r.rating || 5) === 5));
     const n = state.reviews.length;
     const avg = state.reviews.reduce((s, r) => s + (r.rating || 5), 0) / n;
     const count = (k) => state.reviews.filter((r) => r.source === k).length;
