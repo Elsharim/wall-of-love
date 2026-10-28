@@ -139,6 +139,12 @@
   .clip { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); }
   .clip video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; object-fit: contain; }
   .clip .cap { padding: 14px 18px 16px; }
+  @media (min-width: 760px) {
+    .clip:first-child { grid-column: 1 / -1; display: grid; grid-template-columns: 3fr 2fr; align-items: center; }
+    .clip:first-child .cap { padding: 22px 28px; }
+    .clip:first-child q { font-size: 21px; }
+  }
+  .clip:first-child .cap::before { content: "⭐ Featured"; display: inline-block; margin-bottom: 8px; font: 600 11px Poppins, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--coral); }
   .clip q { display: block; quotes: none; font: 500 16px/1.5 Lora, Georgia, serif; }
   .clip q mark { font-weight: 600; }
   .clip small { display: block; margin-top: 8px; font-size: 12px; color: var(--muted); }
@@ -221,7 +227,7 @@
 </div>
 
 <div class="wrap" id="clipsSec" hidden>
-  <div class="sec"><h2>🎥 Clips from the onboarding calls</h2><p>Real moments, straight from the call recordings.</p></div>
+  <div class="sec"><h2>🎥 Clips from the onboarding calls</h2><p id="clipcount">Real moments, straight from the call recordings.</p></div>
   <div class="clips" id="clips"></div>
 </div>
 
