@@ -1,12 +1,93 @@
 [
- {"src":"clips/anna.mp4","poster":"clips/anna.jpg","name":"Anna-Lena Wenig","date":"2026-10-28","quote":"You have really done an amazing job. I'm selling stuff myself and I think it's just such a perfect process, this onboarding call. I had so many wow moments."},
- {"src":"clips/lisbeth.mp4","poster":"clips/lisbeth.jpg","name":"Lisbeth Graham","date":"2026-07-23","quote":"I have never seen a tool like this, and I was completely shocked. I've never seen a tool do that. I was blown away by that."},
- {"src":"clips/kobe.mp4","poster":"clips/kobe.jpg","name":"Kobe Shemesh","date":"2026-07-27","quote":"This is a sick product. Honestly, it's a sick product. I love it. Very clean. I love how fast it is."},
- {"src":"clips/gabriel.mp4","poster":"clips/gabriel.jpg","name":"Gabriel Cunningham","date":"2026-06-24","quote":"This is winning. This is amazing. Literally what I needed, some just clarity and also A to Z."},
- {"src":"clips/sam.mp4","poster":"clips/sam.jpg","name":"Sam Newman","date":"2026-07-17","quote":"This is amazing. This is a game changer. It really is awesome."},
- {"src":"clips/lynyetta.mp4","poster":"clips/lynyetta.jpg","name":"Dr. Lynyetta Willis","date":"2026-07-25","quote":"This is super helpful. Oh my gosh. These outliers are amazing."},
- {"src":"clips/chavella.mp4","poster":"clips/chavella.jpg","name":"Chavella Richardson","date":"2026-07-20","quote":"Wow, this is amazing."},
- {"src":"clips/selene.mp4","poster":"clips/selene.jpg","name":"Selene Snippe","date":"2026-07-24","quote":"Thank you so much, Mo. This is so helpful."},
- {"src":"clips/patrina.mp4","poster":"clips/patrina.jpg","name":"Patrina","date":"2026-07-06","quote":"Thank you so much. I really appreciate you. Thank you, Mo. I appreciate you so much."},
- {"src":"clips/maya.mp4","poster":"clips/maya.jpg","name":"Maya","date":"2026-06-23","quote":"Honestly, it's super, super nice, super helpful. Thank you so much for the guidance. You were great."}
+ {
+  "src": "clips/ivelina2.mp4",
+  "poster": "clips/ivelina2.jpg",
+  "name": "Ivelina Nikolova",
+  "date": "2026-10-27",
+  "quote": "No, no, really, I did not expect this. The value you just provided is huge. I need you to know this, because I didn't even know what Poppy can do for me."
+ },
+ {
+  "src": "clips/anna.mp4",
+  "poster": "clips/anna.jpg",
+  "name": "Anna-Lena Wenig",
+  "date": "2026-10-28",
+  "quote": "You have really done an amazing job. I'm selling stuff myself and I think it's just such a perfect process, this onboarding call. I had so many wow moments."
+ },
+ {
+  "src": "clips/ivelina1.mp4",
+  "poster": "clips/ivelina1.jpg",
+  "name": "Ivelina Nikolova",
+  "date": "2026-10-27",
+  "quote": "Oh my God, this is brilliant. You built it for me? Oh my goodness, I did not expect this. Thank you so much."
+ },
+ {
+  "src": "clips/lisbeth.mp4",
+  "poster": "clips/lisbeth.jpg",
+  "name": "Lisbeth Graham",
+  "date": "2026-07-23",
+  "quote": "I have never seen a tool like this, and I was completely shocked. I've never seen a tool do that. I was blown away by that."
+ },
+ {
+  "src": "clips/kobe.mp4",
+  "poster": "clips/kobe.jpg",
+  "name": "Kobe Shemesh",
+  "date": "2026-07-27",
+  "quote": "This is a sick product. Honestly, it's a sick product. I love it. Very clean. I love how fast it is."
+ },
+ {
+  "src": "clips/gabriel.mp4",
+  "poster": "clips/gabriel.jpg",
+  "name": "Gabriel Cunningham",
+  "date": "2026-06-24",
+  "quote": "This is winning. This is amazing. Literally what I needed, some just clarity and also A to Z."
+ },
+ {
+  "src": "clips/sam.mp4",
+  "poster": "clips/sam.jpg",
+  "name": "Sam Newman",
+  "date": "2026-07-17",
+  "quote": "This is amazing. This is a game changer. It really is awesome."
+ },
+ {
+  "src": "clips/lynyetta.mp4",
+  "poster": "clips/lynyetta.jpg",
+  "name": "Dr. Lynyetta Willis",
+  "date": "2026-07-25",
+  "quote": "This is super helpful. Oh my gosh. These outliers are amazing."
+ },
+ {
+  "src": "clips/chavella.mp4",
+  "poster": "clips/chavella.jpg",
+  "name": "Chavella Richardson",
+  "date": "2026-07-20",
+  "quote": "Wow, this is amazing."
+ },
+ {
+  "src": "clips/selene.mp4",
+  "poster": "clips/selene.jpg",
+  "name": "Selene Snippe",
+  "date": "2026-07-24",
+  "quote": "Thank you so much, Mo. This is so helpful."
+ },
+ {
+  "src": "clips/patrina.mp4",
+  "poster": "clips/patrina.jpg",
+  "name": "Patrina",
+  "date": "2026-07-06",
+  "quote": "Thank you so much. I really appreciate you. Thank you, Mo. I appreciate you so much."
+ },
+ {
+  "src": "clips/maya.mp4",
+  "poster": "clips/maya.jpg",
+  "name": "Maya",
+  "date": "2026-06-23",
+  "quote": "Honestly, it's super, super nice, super helpful. Thank you so much for the guidance. You were great."
+ },
+ {
+  "src": "clips/neal.mp4",
+  "poster": "clips/neal.jpg",
+  "name": "Neal R",
+  "date": "2026-09-23",
+  "quote": "Thank you again for your help. This is super helpful."
+ }
 ]
