@@ -131,6 +131,19 @@
   @keyframes up { to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { .card, .me::before { animation: none; opacity: 1; transform: none; } }
 
+  /* sections */
+  .sec { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 26px 0 4px; }
+  .sec h2 { margin: 0; font: 600 clamp(22px, 3vw, 30px)/1.2 Lora, Georgia, serif; }
+  .sec p { margin: 0; color: var(--muted); font-size: 14px; }
+  .clips { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 14px 0 40px; }
+  .clip { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); }
+  .clip video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; object-fit: contain; }
+  .clip .cap { padding: 14px 18px 16px; }
+  .clip q { display: block; quotes: none; font: 500 16px/1.5 Lora, Georgia, serif; }
+  .clip q mark { font-weight: 600; }
+  .clip small { display: block; margin-top: 8px; font-size: 12px; color: var(--muted); }
+  .clip small b { color: var(--ink); font-weight: 600; }
+
   .foot { text-align: center; padding: 10px 0 56px; }
   .foot p { margin: 0 0 6px; font: 500 22px/1.3 Lora, Georgia, serif; }
   .foot small { color: var(--muted); font-size: 12px; }
@@ -189,6 +202,10 @@
   </section>
 </div>
 
+<div class="wrap">
+  <div class="sec"><h2>✍️ Written reviews</h2><p id="wcount">Every review that names Mo.</p></div>
+</div>
+
 <nav class="bar" aria-label="Filter reviews">
   <div class="wrap">
     <div class="chips" id="sources"></div>
@@ -201,6 +218,14 @@
 
 <div class="wrap">
   <main class="grid" id="grid"><p class="empty">Loading reviews…</p></main>
+</div>
+
+<div class="wrap" id="clipsSec" hidden>
+  <div class="sec"><h2>🎥 Clips from the onboarding calls</h2><p>Real moments, straight from the call recordings.</p></div>
+  <div class="clips" id="clips"></div>
+</div>
+
+<div class="wrap">
   <footer class="foot">
     <p>See you on the call 👋</p>
     <small id="updated"></small>
@@ -400,6 +425,24 @@
       t = setTimeout(() => { if (columnCount() !== last) { last = columnCount(); render(); } }, 150);
     });
   }
+
+  // 🎥 onboarding clips: clips.json lists them; no file = the section stays hidden
+  fetch("clips.json", { cache: "no-cache" })
+    .then((r) => (r.ok ? r.json() : []))
+    .then((list) => {
+      if (!Array.isArray(list) || !list.length) return;
+      const box = document.getElementById("clips");
+      box.innerHTML = list.map((c) => `
+        <figure class="clip" style="margin:0">
+          <video src="${esc(c.src)}" poster="${esc(c.poster || "")}" controls playsinline preload="none"></video>
+          <figcaption class="cap"><q>“${esc(c.quote).replace(NAME, (m) => `<mark>${m}</mark>`)}”</q>
+          <small><b>${esc(c.name)}</b> · onboarding call · ${esc(fmtDate(c.date))}</small></figcaption>
+        </figure>`).join("");
+      // one clip plays at a time
+      box.addEventListener("play", (e) => box.querySelectorAll("video").forEach((v) => v !== e.target && v.pause()), true);
+      document.getElementById("clipsSec").hidden = false;
+    })
+    .catch(() => {});
 
   fetch("reviews.json", { cache: "no-cache" })
     .then((r) => r.json())
