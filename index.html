@@ -441,7 +441,7 @@
       box.innerHTML = list.map((c) => `
         <figure class="clip" style="margin:0">
           <video src="${esc(c.src)}" poster="${esc(c.poster || "")}" controls playsinline preload="none"></video>
-          <figcaption class="cap"><q>“${esc(c.quote).replace(NAME, (m) => `<mark>${m}</mark>`)}”</q>
+          <figcaption class="cap"><q>${c.quote.includes("“") ? "" : "“"}${esc(c.quote).replace(NAME, (m) => `<mark>${m}</mark>`)}${c.quote.includes("“") ? "" : "”"}</q>
           <small><b>${esc(c.name)}</b> · onboarding call · ${esc(fmtDate(c.date))}</small></figcaption>
         </figure>`).join("");
       // one clip plays at a time

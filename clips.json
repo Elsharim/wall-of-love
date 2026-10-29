@@ -7,6 +7,13 @@
   "quote": "Oh my God, this is brilliant. You built it for me? \u2026 No, no, really, I did not expect this. I mean, the value you just provided is huge. I need you to know this, because I didn't even know what Poppy can do for me."
  },
  {
+  "src": "clips/tim_turn.mp4",
+  "poster": "clips/tim_turn.jpg",
+  "name": "Tim Terpening",
+  "date": "2026-10-14",
+  "quote": "Minute 7: \u201cIt's not even just skepticism necessarily, it's just like, do I need it? Because it's another thing I gotta learn.\u201d Minute 42: \u201cYou kind of convinced me here. I'm glad I didn't cancel this call.\u201d Minute 48: \u201cI'm gonna give you a 10, Mo. You're telling me everything and then blowing my mind with extra stuff too.\u201d"
+ },
+ {
   "src": "clips/eleanor11.mp4",
   "poster": "clips/eleanor11.jpg",
   "name": "Eleanor",
@@ -33,13 +40,6 @@
   "name": "Caroline LSM",
   "date": "2026-10-21",
   "quote": "Are you kidding me? ... I love it."
- },
- {
-  "src": "clips/tim10.mp4",
-  "poster": "clips/tim10.jpg",
-  "name": "Tim Terpening",
-  "date": "2026-10-14",
-  "quote": "I'm gonna give you a 10, Mo. You're telling me everything and then blowing my mind with extra stuff too\u2026 I do not have the time, capability, or desire to build it myself. What you guys have pieced together, it works so well and it's kind of fun to play with."
  },
  {
   "src": "clips/gitte10.mp4",
@@ -131,13 +131,6 @@
   "name": "Chavella Richardson",
   "date": "2026-07-20",
   "quote": "Wow, this is amazing."
- },
- {
-  "src": "clips/tim.mp4",
-  "poster": "clips/tim.jpg",
-  "name": "Tim Terpening",
-  "date": "2026-10-14",
-  "quote": "You kind of convinced me here. This is good. I'm glad I didn't cancel this call. Let's go. No, this is super helpful, man."
  },
  {
   "src": "clips/caroline.mp4",
