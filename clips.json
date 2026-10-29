@@ -1,10 +1,10 @@
 [
  {
-  "src": "clips/tim10.mp4",
-  "poster": "clips/tim10.jpg",
-  "name": "Tim Terpening",
-  "date": "2026-10-14",
-  "quote": "I'm gonna give you a 10, Mo. You're telling me everything and then blowing my mind with extra stuff too\u2026 I do not have the time, capability, or desire to build it myself. What you guys have pieced together, it works so well and it's kind of fun to play with."
+  "src": "clips/ivelina_featured.mp4",
+  "poster": "clips/ivelina_featured.jpg",
+  "name": "Ivelina Nikolova",
+  "date": "2026-10-27",
+  "quote": "Oh my God, this is brilliant. You built it for me? \u2026 No, no, really, I did not expect this. I mean, the value you just provided is huge. I need you to know this, because I didn't even know what Poppy can do for me."
  },
  {
   "src": "clips/eleanor11.mp4",
@@ -12,13 +12,6 @@
   "name": "Eleanor",
   "date": "2026-10-14",
   "quote": "11. I love it for sure. My husband says that I have the technical iteration of a sixth grader. So for me to be able to understand this\u2026"
- },
- {
-  "src": "clips/ivelina1.mp4",
-  "poster": "clips/ivelina1.jpg",
-  "name": "Ivelina Nikolova",
-  "date": "2026-10-27",
-  "quote": "Oh my God, this is brilliant. You built it for me? Oh my goodness, I did not expect this. Thank you so much."
  },
  {
   "src": "clips/franstudio.mp4",
@@ -40,6 +33,13 @@
   "name": "Caroline LSM",
   "date": "2026-10-21",
   "quote": "Are you kidding me? ... I love it."
+ },
+ {
+  "src": "clips/tim10.mp4",
+  "poster": "clips/tim10.jpg",
+  "name": "Tim Terpening",
+  "date": "2026-10-14",
+  "quote": "I'm gonna give you a 10, Mo. You're telling me everything and then blowing my mind with extra stuff too\u2026 I do not have the time, capability, or desire to build it myself. What you guys have pieced together, it works so well and it's kind of fun to play with."
  },
  {
   "src": "clips/gitte10.mp4",
@@ -131,13 +131,6 @@
   "name": "Chavella Richardson",
   "date": "2026-07-20",
   "quote": "Wow, this is amazing."
- },
- {
-  "src": "clips/ivelina2.mp4",
-  "poster": "clips/ivelina2.jpg",
-  "name": "Ivelina Nikolova",
-  "date": "2026-10-27",
-  "quote": "No, no, really, I did not expect this. The value you just provided is huge. I need you to know this, because I didn't even know what Poppy can do for me."
  },
  {
   "src": "clips/tim.mp4",
