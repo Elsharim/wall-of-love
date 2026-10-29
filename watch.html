@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What people say after their call with Mo · Poppy AI</title>
+<meta name="description" content="Real Poppy customers on their call with Mo.">
+<meta property="og:title" content="What people say after their call with Mo">
+<meta property="og:description" content="Real Poppy customers, unscripted. Watch with sound 🔊">
+<meta property="og:type" content="video.other">
+<meta property="og:url" content="https://getpoppy.ai/mo/wall-of-love/watch">
+<meta property="og:image" content="https://getpoppy.ai/mo/wall-of-love/montage.jpg?v=12">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:video" content="https://getpoppy.ai/mo/wall-of-love/montage.mp4?v=12">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1920">
+<meta property="og:video:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What people say after their call with Mo">
+<meta name="twitter:description" content="Real Poppy customers, unscripted. Watch with sound 🔊">
+<meta name="twitter:image" content="https://getpoppy.ai/mo/wall-of-love/montage.jpg?v=12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1f161b;--ink:#f6efe6;--muted:#bba99d;--coral:#ff7a50}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,sans-serif}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:16px;
+  background:radial-gradient(ellipse at 50% 40%,#3a2530 0%,var(--bg) 70%)}
+.wrap{position:relative;width:min(100%,calc((100vh - 120px) * 16 / 9));aspect-ratio:16/9;border-radius:18px;overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.55);background:#000}
+video{width:100%;height:100%;display:block;object-fit:contain;background:#000}
+.play{position:absolute;inset:0;border:0;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.play.on{display:none}
+.pin{width:96px;height:96px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 0 0 rgba(255,122,80,.6);animation:pulse 2s infinite}
+.tri{width:0;height:0;border-left:30px solid #fff;border-top:19px solid transparent;border-bottom:19px solid transparent;margin-left:7px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,122,80,.55)}70%{box-shadow:0 0 0 26px rgba(255,122,80,0)}100%{box-shadow:0 0 0 0 rgba(255,122,80,0)}}
+.foot{font-size:14px;color:var(--muted);text-align:center}
+.foot a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--coral)}
+@media (max-width:600px){.pin{width:64px;height:64px}.tri{border-left-width:20px;border-top-width:13px;border-bottom-width:13px;margin-left:5px}.wrap{border-radius:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <video id="v" src="montage.mp4?v=12" poster="montage.jpg?v=12" playsinline preload="metadata"></video>
+  <button class="play" id="p" aria-label="Play the video"><span class="pin"><span class="tri"></span></span></button>
+</div>
+<p class="foot">Real Poppy customers on their call with Mo · <a href="./">See the full Wall of Love</a></p>
+<script>
+const v=document.getElementById('v'),p=document.getElementById('p');
+p.addEventListener('click',()=>{p.classList.add('on');v.controls=true;v.play();});
+</script>
+</body>
+</html>
