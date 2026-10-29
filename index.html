@@ -124,7 +124,16 @@
   /* highlight reel */
   .reel { margin: 0 0 22px; border-radius: 24px; overflow: hidden; background: var(--ink); box-shadow: 0 20px 50px -24px rgba(43, 30, 38, .6); }
   .reel video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #1d1418; }
-  @media (max-width: 720px) { .reel { border-radius: 16px; } }
+  .reel { position: relative; }
+  .play { position: absolute; inset: 0; border: 0; background: transparent; cursor: pointer; }
+  .play .pin { position: absolute; left: 80.7%; top: 79%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .play .tri { width: 96px; height: 96px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 10px rgba(240, 96, 60, .28), 0 18px 40px -10px rgba(0, 0, 0, .6); position: relative; transition: transform .2s; animation: pulse 2.4s ease-out infinite; }
+  .play .tri::after { content: ""; position: absolute; left: 37px; top: 28px; border-style: solid; border-width: 20px 0 20px 30px; border-color: transparent transparent transparent #fff; }
+  .play em { font: 600 15px Poppins, sans-serif; font-style: normal; color: #fff; background: rgba(43, 30, 38, .72); padding: 7px 14px; border-radius: 999px; }
+  .play:hover .tri { transform: scale(1.07); }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(240, 96, 60, .5), 0 18px 40px -10px rgba(0,0,0,.6); } 100% { box-shadow: 0 0 0 26px rgba(240, 96, 60, 0), 0 18px 40px -10px rgba(0,0,0,.6); } }
+  .reel.on .play { display: none; }
+  @media (max-width: 720px) { .reel { border-radius: 16px; } .play .pin { top: 83%; } .play .tri { width: 44px; height: 44px; box-shadow: 0 6px 16px -6px rgba(0,0,0,.6); animation: none; } .play .tri::after { left: 17px; top: 13px; border-width: 9px 0 9px 14px; } .play em { display: none; } }
 
   /* spotlight */
   .spot { position: relative; margin: 6px 0 26px; background: var(--ink); color: #fff; border-radius: 24px; padding: 34px 40px 28px; overflow: hidden; box-shadow: 0 20px 50px -24px rgba(43, 30, 38, .6); }
@@ -217,7 +226,8 @@
 
 <div class="wrap">
   <section class="reel" aria-label="Onboarding highlight reel">
-    <video src="montage.mp4" poster="montage.jpg?v=3" controls playsinline preload="metadata"></video>
+    <video id="reelv" src="montage.mp4" poster="montage.jpg?v=6" playsinline preload="metadata"></video>
+    <button class="play" id="reelplay" aria-label="Play the highlight reel"><span class="pin"><span class="tri"></span><em>Watch · 1:20</em></span></button>
   </section>
 </div>
 
@@ -460,6 +470,10 @@
     })
     .catch(() => {});
 
+  (() => {
+    const v = document.getElementById("reelv"), b = document.getElementById("reelplay");
+    b.addEventListener("click", () => { b.parentElement.classList.add("on"); v.controls = true; v.play(); });
+  })();
   fetch("reviews.json", { cache: "no-cache" })
     .then((r) => r.json())
     .then(setup)
