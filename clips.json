@@ -14,6 +14,27 @@
   "quote": "Minute 7: \u201cIt's not even just skepticism necessarily, it's just like, do I need it? Because it's another thing I gotta learn.\u201d Minute 42: \u201cYou kind of convinced me here. I'm glad I didn't cancel this call.\u201d Minute 48: \u201cI'm gonna give you a 10, Mo. You're telling me everything and then blowing my mind with extra stuff too.\u201d"
  },
  {
+  "src": "clips/kate_turn.mp4",
+  "poster": "clips/kate_turn.jpg",
+  "name": "Kate Prance",
+  "date": "2026-10-22",
+  "quote": "Minute 2: \u201cI'm quite dyslexic\u2026 I really want to give easy takeaways for people, but I don't want to lose my voice in that.\u201d Minute 36: \u201cOh my God, and it writes the caption?\u201d (in her style) Minute 49: \u201cI definitely think it's the best AI thing.\u201d"
+ },
+ {
+  "src": "clips/lallenia_turn.mp4",
+  "poster": "clips/lallenia_turn.jpg",
+  "name": "Lallenia Birge",
+  "date": "2026-10-08",
+  "quote": "Minute 3: \u201cIt seems a little overwhelming\u2026 I'm not gonna lie, I was super confused.\u201d Minute 50: \u201cHow many boards do we get? Unlimited? What? This is genius.\u201d Minute 51: \u201cIt's probably a 10. I was not expecting it to do all that.\u201d"
+ },
+ {
+  "src": "clips/greg_turn.mp4",
+  "poster": "clips/greg_turn.jpg",
+  "name": "Greg Jones",
+  "date": "2026-10-13",
+  "quote": "Start: \u201cI feel like I've lost my voice\u2026 it's so repetitive and it's so boring\u2026 this isn't even how I talk.\u201d Minute 14: \u201cI feel like this knows me. This is way better.\u201d Minute 41: \u201cYeah, this is great. Now how can I do something like this for my long form?\u201d"
+ },
+ {
   "src": "clips/eleanor11.mp4",
   "poster": "clips/eleanor11.jpg",
   "name": "Eleanor",
@@ -26,13 +47,6 @@
   "name": "Fran Nichols",
   "date": "2026-10-28",
   "quote": "(Seeing Content Studio) This is so... wow."
- },
- {
-  "src": "clips/katecaption.mp4",
-  "poster": "clips/katecaption.jpg",
-  "name": "Kate Prance",
-  "date": "2026-10-22",
-  "quote": "Oh my God, and it writes the caption?"
  },
  {
   "src": "clips/carolinelsm.mp4",
@@ -61,20 +75,6 @@
   "name": "Eleanor",
   "date": "2026-10-14",
   "quote": "Oh my goodness, do you like that? Why do people not use this? This is crazy."
- },
- {
-  "src": "clips/katebest.mp4",
-  "poster": "clips/katebest.jpg",
-  "name": "Kate Prance",
-  "date": "2026-10-22",
-  "quote": "I definitely think it's the best AI thing. I think it's better than Sandcastles. I tend to use Claude for my scripts and a little bit of ChatGPT as well. So it's definitely better than those."
- },
- {
-  "src": "clips/lallenia10.mp4",
-  "poster": "clips/lallenia10.jpg",
-  "name": "Lallenia Birge",
-  "date": "2026-10-08",
-  "quote": "It's probably a 10. I was not expecting it to do all that. If I can put it all in one place and come back... this is kind of really smart."
  },
  {
   "src": "clips/francaption.mp4",
