@@ -1,52 +1,17 @@
 [
  {
-  "src": "clips/ivelina2.mp4",
-  "poster": "clips/ivelina2.jpg",
-  "name": "Ivelina Nikolova",
-  "date": "2026-10-27",
-  "quote": "No, no, really, I did not expect this. The value you just provided is huge. I need you to know this, because I didn't even know what Poppy can do for me."
- },
- {
-  "src": "clips/anna.mp4",
-  "poster": "clips/anna.jpg",
-  "name": "Anna-Lena Wenig",
-  "date": "2026-10-28",
-  "quote": "You have really done an amazing job. I'm selling stuff myself and I think it's just such a perfect process, this onboarding call. I had so many wow moments."
- },
- {
-  "src": "clips/caroline.mp4",
-  "poster": "clips/caroline.jpg",
-  "name": "Caroline Flett",
-  "date": "2026-10-15",
-  "quote": "I like built this little presentation out. Did you? Good for you. That's like super slick. I love that. That's so slick."
- },
- {
-  "src": "clips/lallenia.mp4",
-  "poster": "clips/lallenia.jpg",
-  "name": "Lallenia Birge",
-  "date": "2026-10-08",
-  "quote": "Okay, you're doing a great job at this. I hope they keep you on there. You like it because you're very good."
- },
- {
-  "src": "clips/fran1.mp4",
-  "poster": "clips/fran1.jpg",
-  "name": "Fran Nichols",
-  "date": "2026-10-28",
-  "quote": "No, this is amazing. Thank you so much for your time. I'm blown away."
- },
- {
-  "src": "clips/tim.mp4",
-  "poster": "clips/tim.jpg",
+  "src": "clips/tim10.mp4",
+  "poster": "clips/tim10.jpg",
   "name": "Tim Terpening",
   "date": "2026-10-14",
-  "quote": "You kind of convinced me here. This is good. I'm glad I didn't cancel this call. Let's go. No, this is super helpful, man."
+  "quote": "I'm gonna give you a 10, Mo. You're telling me everything and then blowing my mind with extra stuff too. I do not have the time or desire to build it myself, and what you guys have pieced together works so well."
  },
  {
-  "src": "clips/lisbeth.mp4",
-  "poster": "clips/lisbeth.jpg",
-  "name": "Lisbeth Graham",
-  "date": "2026-07-23",
-  "quote": "I have never seen a tool like this, and I was completely shocked. I've never seen a tool do that. I was blown away by that."
+  "src": "clips/eleanor11.mp4",
+  "poster": "clips/eleanor11.jpg",
+  "name": "Eleanor",
+  "date": "2026-10-14",
+  "quote": "Out of 10? 11. I love it. My husband says I have the technical skills of a sixth grader, so for me to be able to understand this..."
  },
  {
   "src": "clips/ivelina1.mp4",
@@ -56,6 +21,41 @@
   "quote": "Oh my God, this is brilliant. You built it for me? Oh my goodness, I did not expect this. Thank you so much."
  },
  {
+  "src": "clips/franstudio.mp4",
+  "poster": "clips/franstudio.jpg",
+  "name": "Fran Nichols",
+  "date": "2026-10-28",
+  "quote": "(Seeing Content Studio) This is so... wow."
+ },
+ {
+  "src": "clips/katecaption.mp4",
+  "poster": "clips/katecaption.jpg",
+  "name": "Kate Prance",
+  "date": "2026-10-22",
+  "quote": "Oh my God, and it writes the caption?"
+ },
+ {
+  "src": "clips/carolinelsm.mp4",
+  "poster": "clips/carolinelsm.jpg",
+  "name": "Caroline LSM",
+  "date": "2026-10-21",
+  "quote": "Are you kidding me? ... I love it."
+ },
+ {
+  "src": "clips/gitte10.mp4",
+  "poster": "clips/gitte10.jpg",
+  "name": "Gitte Marie Rydal",
+  "date": "2026-10-16",
+  "quote": "The output is 10 out of 10. From what I've seen, it's pretty spot on."
+ },
+ {
+  "src": "clips/lisbeth.mp4",
+  "poster": "clips/lisbeth.jpg",
+  "name": "Lisbeth Graham",
+  "date": "2026-07-23",
+  "quote": "I have never seen a tool like this, and I was completely shocked. I've never seen a tool do that. I was blown away by that."
+ },
+ {
   "src": "clips/eleanor.mp4",
   "poster": "clips/eleanor.jpg",
   "name": "Eleanor",
@@ -63,11 +63,25 @@
   "quote": "Oh my goodness, do you like that? Why do people not use this? This is crazy."
  },
  {
-  "src": "clips/lissy.mp4",
-  "poster": "clips/lissy.jpg",
-  "name": "Lissy Donovan",
-  "date": "2026-10-14",
-  "quote": "I think it's like at least a 7 out of 10 right out of the box, which is way better than anything else I've used."
+  "src": "clips/katebest.mp4",
+  "poster": "clips/katebest.jpg",
+  "name": "Kate Prance",
+  "date": "2026-10-22",
+  "quote": "I definitely think it's the best AI. I think it's better than Sandcastles. I tend to use other AI for my scripts, so it's definitely better than those."
+ },
+ {
+  "src": "clips/lallenia10.mp4",
+  "poster": "clips/lallenia10.jpg",
+  "name": "Lallenia Birge",
+  "date": "2026-10-08",
+  "quote": "It's probably a 10. I was not expecting it to do all that. If I can put it all in one place and come back... this is kind of really smart."
+ },
+ {
+  "src": "clips/francaption.mp4",
+  "poster": "clips/francaption.jpg",
+  "name": "Fran Nichols",
+  "date": "2026-10-28",
+  "quote": "Wow. Wow. And it also has your caption."
  },
  {
   "src": "clips/kobe.mp4",
@@ -84,27 +98,6 @@
   "quote": "This is winning. This is amazing. Literally what I needed, some just clarity and also A to Z."
  },
  {
-  "src": "clips/diego.mp4",
-  "poster": "clips/diego.jpg",
-  "name": "Diego Lopez",
-  "date": "2026-10-20",
-  "quote": "Oh damn, bro. It's insane how you can just connect everything to it."
- },
- {
-  "src": "clips/jt.mp4",
-  "poster": "clips/jt.jpg",
-  "name": "JT Turner",
-  "date": "2026-09-29",
-  "quote": "You rock, Mo. Thank you."
- },
- {
-  "src": "clips/fran2.mp4",
-  "poster": "clips/fran2.jpg",
-  "name": "Fran Nichols",
-  "date": "2026-10-28",
-  "quote": "That's so great. That is so awesome. Yeah, that is incredible."
- },
- {
   "src": "clips/sam.mp4",
   "poster": "clips/sam.jpg",
   "name": "Sam Newman",
@@ -112,11 +105,18 @@
   "quote": "This is amazing. This is a game changer. It really is awesome."
  },
  {
-  "src": "clips/michael.mp4",
-  "poster": "clips/michael.jpg",
-  "name": "Michael D'Almeida",
-  "date": "2026-09-21",
-  "quote": "Yeah, great job with the setup and the videos and that sort of thing."
+  "src": "clips/diego.mp4",
+  "poster": "clips/diego.jpg",
+  "name": "Diego Lopez",
+  "date": "2026-10-20",
+  "quote": "Oh damn, bro. It's insane how you can just connect everything to it."
+ },
+ {
+  "src": "clips/fran2.mp4",
+  "poster": "clips/fran2.jpg",
+  "name": "Fran Nichols",
+  "date": "2026-10-28",
+  "quote": "That's so great. That is so awesome. Yeah, that is incredible."
  },
  {
   "src": "clips/lynyetta.mp4",
@@ -133,31 +133,31 @@
   "quote": "Wow, this is amazing."
  },
  {
-  "src": "clips/selene.mp4",
-  "poster": "clips/selene.jpg",
-  "name": "Selene Snippe",
-  "date": "2026-07-24",
-  "quote": "Thank you so much, Mo. This is so helpful."
+  "src": "clips/ivelina2.mp4",
+  "poster": "clips/ivelina2.jpg",
+  "name": "Ivelina Nikolova",
+  "date": "2026-10-27",
+  "quote": "No, no, really, I did not expect this. The value you just provided is huge. I need you to know this, because I didn't even know what Poppy can do for me."
  },
  {
-  "src": "clips/selena.mp4",
-  "poster": "clips/selena.jpg",
-  "name": "Selena Conmackie",
-  "date": "2026-09-30",
-  "quote": "I'm actually really glad I did sit with you."
+  "src": "clips/tim.mp4",
+  "poster": "clips/tim.jpg",
+  "name": "Tim Terpening",
+  "date": "2026-10-14",
+  "quote": "You kind of convinced me here. This is good. I'm glad I didn't cancel this call. Let's go. No, this is super helpful, man."
  },
  {
-  "src": "clips/patrina.mp4",
-  "poster": "clips/patrina.jpg",
-  "name": "Patrina",
-  "date": "2026-07-06",
-  "quote": "Thank you so much. I really appreciate you. Thank you, Mo. I appreciate you so much."
+  "src": "clips/caroline.mp4",
+  "poster": "clips/caroline.jpg",
+  "name": "Caroline Flett",
+  "date": "2026-10-15",
+  "quote": "I like built this little presentation out. Did you? Good for you. That's like super slick. I love that. That's so slick."
  },
  {
-  "src": "clips/neal.mp4",
-  "poster": "clips/neal.jpg",
-  "name": "Neal R",
-  "date": "2026-09-23",
-  "quote": "Thank you again for your help. This is super helpful."
+  "src": "clips/anna.mp4",
+  "poster": "clips/anna.jpg",
+  "name": "Anna-Lena Wenig",
+  "date": "2026-10-28",
+  "quote": "You have really done an amazing job. I'm selling stuff myself and I think it's just such a perfect process, this onboarding call. I had so many wow moments."
  }
 ]
